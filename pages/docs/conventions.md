@@ -14,13 +14,13 @@ type User struct {
 }
 ```
 
-You can set other fields as primary key with tag `primaryKey`
+You can set other fields as primary key with tag `primary_key`
 
 ```go
 // Set field `UUID` as primary field
 type Animal struct {
   ID     int64
-  UUID   string `gorm:"primaryKey"`
+  UUID   string `gorm:"primary_key"`
   Name   string
   Age    int64
 }
